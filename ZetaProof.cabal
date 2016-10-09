@@ -1,13 +1,13 @@
 name:                ZetaProof
 version:             0.1.0.0
-synopsis:            Initial project template from stack
+synopsis:            Mathematical theorems & proofs database
 description:         Please see README.md
 homepage:            https://github.com/RecursiveLogic/ZetaProof#README
 license:             BSD3
 license-file:        LICENSE
 author:              http://radiux.io/
 maintainer:          http://radiux.io/
-copyright:           2016 Author name here
+copyright:           http://radiux.io/
 category:            Web
 build-type:          Simple
 -- extra-source-files:
@@ -19,6 +19,8 @@ library
   build-depends:       base >= 4.7 && < 5,
                        aeson >= 0.11.2.0,
                        bytestring >= 0.10.6.0,
+                       http-types >= 0.9.1,
+                       scotty >= 0.11.0,
                        wreq >= 0.4.1.0
   default-language:    Haskell2010
 

@@ -1,6 +1,9 @@
-module Main where
+{-# LANGUAGE OverloadedStrings #-}
 
-import Lib
+import Network.HTTP.Types
+import Web.Scotty
+import Data.Monoid (mconcat)
+import Data.Aeson
 
-main :: IO ()
-main = someFunc
+main = scotty 8080 $ do
+    get "/" $ file "./static/index.html"

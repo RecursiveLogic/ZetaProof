@@ -1,6 +1,4 @@
-module Lib
-    ( someFunc
-    ) where
+module Lib ( randomFunc ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+randomFunc :: IO ()
+randomFunc = putStrLn "This is a random function"
